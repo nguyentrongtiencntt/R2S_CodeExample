@@ -22,8 +22,10 @@ public class BT3_1 {
         String mulResult = String.format("Multiply %d * %d is : %d ",a,b,a*b);
         System.out.println(mulResult);
 
-        String divResult = String.format("Divide %d * %d is : %f ",a,b,(double)a/b);
-        System.out.println(divResult);
+        if(b!=0){
+            String divResult = String.format("Divide %d * %d is : %f ",a,b,(double)a/b);
+            System.out.println(divResult);
+        } else System.out.println("Divide by zero!");
 
         String powResult = String.format("Power %d ^ %d is : %f ",a,b,Math.pow(a,b));
         System.out.println(powResult);
