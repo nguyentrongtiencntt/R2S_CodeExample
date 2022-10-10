@@ -16,9 +16,5 @@ public class BT3_2 {
 
         System.out.println("Fahrenheit temprature is : " + fah);
 
-
-
-
-
     }
 }
