@@ -27,7 +27,7 @@ public class BT2 {
     System.out.print("Cash pay more : ");
     int other = sc.nextInt();
 
-    double Salary =
+    double salary =
         (double) (pack * 50 + distance * 75)
             + (double) (shift * 50) * 0.1
             + (double) feedback
@@ -35,6 +35,6 @@ public class BT2 {
             + (double) electric
             + (double) other;
     System.out.print("---------------------------");
-    System.out.print("Employee Salary = " + Salary);
+    System.out.print("Employee Salary = " + salary);
   }
 }
