@@ -5,7 +5,9 @@ import java.util.Random;
 public class Bt3V2 {
   public static void main(String[] args) {
 
-    int[] array = new int[20];
+    sum(5,7);
+
+    int[] array = {3,5,7}; // new int[20];
     for (int i = 0; i <array.length ; i++) {
       array[i] = new Random().nextInt(100);
     }
@@ -15,7 +17,7 @@ public class Bt3V2 {
 
       isPrime = checkPrime(array[j]);
 
-      if (isPrime==true) System.out.println(array[j] + " is prime");
+      if (isPrime) System.out.println(array[j] + " is prime");
       else System.out.println(array[j] + " is not prime-----");
 
     }
@@ -27,11 +29,17 @@ public class Bt3V2 {
     int count = 0;
 
     for(int i = 2; i < n/2 ; i++){
-      if (n % i == 0) {count++; break;}
+      if (n % i == 0) {
+        count++;
+        break;}
     }
 
     if (count == 0) isPrime = true;
 
     return isPrime;
+  }
+
+  private static int sum(int a, int b){
+    return a + b;
   }
 }

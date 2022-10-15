@@ -1,0 +1,6 @@
+package labone;
+
+public class Animal {
+    //....
+    //....
+}
